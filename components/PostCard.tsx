@@ -1,3 +1,4 @@
+"use client";
 import { Author } from "../types/Author";
 
 type Props = {
@@ -6,7 +7,6 @@ type Props = {
   date: string;
   excerpt: string;
   author: Author;
-  slug: string;
 };
 
 export default function PostCard({
@@ -15,10 +15,9 @@ export default function PostCard({
   date,
   excerpt,
   author,
-  slug,
 }: Props) {
   return (
-    <section className="bg-slate-200 dark:bg-slate-700 rounded-lg w-80">
+    <section className="bg-slate-200 dark:bg-slate-700 rounded-lg cursor-pointer transition-all duration-200 hover:shadow-lg">
       <img
         className="rounded-t-lg w-full"
         src={coverImage}

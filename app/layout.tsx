@@ -48,7 +48,7 @@ export default function Layout({ children }: ILayout) {
             {theme == "dark" ? <BsSunFill /> : <BsFillMoonFill />}
           </button>
         </nav>
-        <main className="m-3 p-3 h-screen rounded bg-slate-100 dark:bg-slate-800 dark:text-white shadow-xl">
+        <main className="m-3 p-3 rounded bg-slate-100 dark:bg-slate-800 dark:text-white shadow-xl">
           {children}
         </main>
       </body>
