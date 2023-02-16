@@ -2,24 +2,19 @@
 import PostCard from "../components/PostCard";
 import { useRouter } from "next/navigation";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Author } from "../types/Author";
 
 export default function Page() {
-  let author: Author = {
-    name: "Antonio",
-    picture: "https://github.com/Antoni0o.png",
-  };
   const router = useRouter();
 
   return (
     <main>
-      <section className="flex justify-between items-center bg-slate-200 dark:bg-slate-700 rounded-xl mb-10">
+      <section className="md:flex flex-row justify-between items-center bg-slate-200 dark:bg-slate-700 rounded-xl mb-10">
         <div className="p-4">
           <div className="mb-2">
-            <h1 className="font-bold text-6xl mb-2">Bom dia!</h1>
-            <h2 className="text-xl">
-              Me chamo <b>Antonio</b>, sou apaixonado por tecnologia e faço
-              posts neste blog!
+            <h1 className="font-bold text-4xl sm:text-6xl mb-2">Bom dia!</h1>
+            <h2 className="text-lg sm:text-xl">
+              Me chamo <b>Antonio</b>, sou apaixonado por tecnologia, desenvolvi
+              e faço os posts neste blog!
               <br />
               <br />
               Me conheça melhor:
@@ -47,14 +42,13 @@ export default function Page() {
         <img
           src="https://github.com/Antoni0o.png"
           alt="Foto de perfil do Github do Antonio"
-          className="rounded-r-lg w-80"
+          className="rounded-b-lg lg:rounded-r-lg lg:rounded-l-none w-80"
         />
       </section>
       <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
         <div onClick={() => router.push("/primeiro-post")}>
           <PostCard
             title="Como desenvolver testes em Java"
-            author={author}
             coverImage="/assets/primeiro-post/cover.png"
             date="28/07/2023"
             excerpt="Testar a aplicação não é uma tarefa fácil, porém para assegurar a qualidade de software..."
@@ -63,7 +57,6 @@ export default function Page() {
         <div onClick={() => router.push("/primeiro-post")}>
           <PostCard
             title="Como desenvolver testes em Java"
-            author={author}
             coverImage="/assets/primeiro-post/cover.png"
             date="28/07/2023"
             excerpt="Testar a aplicação não é uma tarefa fácil, porém para assegurar a qualidade de software..."
@@ -72,7 +65,6 @@ export default function Page() {
         <div onClick={() => router.push("/primeiro-post")}>
           <PostCard
             title="Como desenvolver testes em Java"
-            author={author}
             coverImage="/assets/primeiro-post/cover.png"
             date="28/07/2023"
             excerpt="Testar a aplicação não é uma tarefa fácil, porém para assegurar a qualidade de software..."
@@ -81,7 +73,6 @@ export default function Page() {
         <div onClick={() => router.push("/primeiro-post")}>
           <PostCard
             title="Como desenvolver testes em Java"
-            author={author}
             coverImage="/assets/primeiro-post/cover.png"
             date="28/07/2023"
             excerpt="Testar a aplicação não é uma tarefa fácil, porém para assegurar a qualidade de software..."

@@ -6,16 +6,9 @@ type Props = {
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
 };
 
-export default function PostCard({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-}: Props) {
+export default function PostCard({ title, coverImage, date, excerpt }: Props) {
   return (
     <section className="bg-slate-200 dark:bg-slate-700 rounded-lg cursor-pointer transition-all duration-200 hover:shadow-lg">
       <img
@@ -24,14 +17,6 @@ export default function PostCard({
         alt={`Foto de: ${title}`}
       />
       <div className="p-4">
-        <div className="author flex text-center items-center gap-2 font-bold">
-          <img
-            src={author.picture}
-            alt={`${author.name} Picture`}
-            className="w-8 rounded-3xl"
-          />
-          <h2 className="opacity-60 text-sm">{author.name}</h2>
-        </div>
         <h1 className="text-2xl font-bold">{title}</h1>
         <h2 className="opacity-60">{excerpt}</h2>
         <hr className="opacity-60 h-1 w-10 my-2 bg-slate-700 border-0 dark:bg-slate-200" />
