@@ -27,7 +27,7 @@ export default function Layout({ children }: ILayout) {
   return (
     <html lang="pt-br" className={localStorage.getItem("theme") || theme}>
       <head>
-        <title>The Antonio's Diaries</title>
+        <title>The Antonio's Times</title>
       </head>
       <body className="dark:bg-slate-500">
         <nav className="flex m-3 p-3 border-slate-200 rounded bg-slate-100 dark:bg-slate-800 dark:border-slate-700 shadow-lg">
