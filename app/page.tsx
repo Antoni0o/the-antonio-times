@@ -25,7 +25,7 @@ export default async function Page() {
               Me conheça melhor:
             </h2>
           </div>
-          <div className="flex gap-2">
+          <div className="md:flex gap-2">
             <a
               target="_blank"
               href="https://github.com/Antoni0o"
@@ -47,7 +47,7 @@ export default async function Page() {
         <img
           src="https://github.com/Antoni0o.png"
           alt="Foto de perfil do Github do Antonio"
-          className="rounded-b-lg lg:rounded-r-lg lg:rounded-l-none w-80"
+          className="rounded-b-lg md:rounded-r-lg md:rounded-l-none w-full"
         />
       </section>
       <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
