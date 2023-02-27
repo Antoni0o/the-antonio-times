@@ -52,7 +52,7 @@ export default async function Page() {
       </section>
       <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
         {posts.map((post, index) => {
-          if (index > 5) {
+          if (index < 5) {
             return (
               <PostCard
                 title={post.title}
