@@ -1,8 +1,8 @@
 ---
-title: "teste"
-excerpt: "teste de primeiro post"
-coverImage: "/assets/blog/primeiro-post/cover.jpg"
-date: "2023-02-10T15:06:00.000Z"
+title: "Primeiro Post; Quem é o Antonio?"
+excerpt: "Autor de provavelmente todos os posts deste blog, conheça um pouco sobre mim."
+coverImage: "/assets/primeiro-post/cover.png"
+date: "27 de fevereiro de 2023 às 10:30"
 author:
   name: "Antonio"
   picture: "https://github.com/Antoni0o.png"

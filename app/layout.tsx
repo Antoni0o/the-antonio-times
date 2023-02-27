@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+import { useRouter } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import Navbar from "../components/Navbar";
@@ -22,12 +23,14 @@ export default function Layout({ children }: ILayout) {
     } else {
       setTheme("light");
     }
+
+    localStorage.setItem("theme", theme);
   }, []);
 
   return (
     <html lang="pt-br" className={localStorage.getItem("theme") || theme}>
       <head>
-        <title>The Antonio's Times</title>
+        <title>The Antonio Times</title>
       </head>
       <body className="dark:bg-slate-500">
         <nav className="flex m-3 p-3 border-slate-200 rounded bg-slate-100 dark:bg-slate-800 dark:border-slate-700 shadow-lg">
@@ -48,7 +51,7 @@ export default function Layout({ children }: ILayout) {
             {theme == "dark" ? <BsSunFill /> : <BsFillMoonFill />}
           </button>
         </nav>
-        <main className="m-3 p-3 rounded bg-slate-100 dark:bg-slate-800 dark:text-white shadow-xl">
+        <main className="m-3 rounded bg-slate-100 dark:bg-slate-800 dark:text-white shadow-xl">
           {children}
         </main>
       </body>
