@@ -47,7 +47,7 @@ export default async function Page() {
         <img
           src="https://github.com/Antoni0o.png"
           alt="Foto de perfil do Github do Antonio"
-          className="rounded-b-lg md:rounded-r-lg md:rounded-l-none w-full"
+          className="rounded-b-lg md:rounded-r-lg md:rounded-l-none w-full md:w-1/4"
         />
       </section>
       <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
