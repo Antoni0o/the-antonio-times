@@ -52,16 +52,18 @@ export default async function Page() {
       </section>
       <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
         {posts.map((post, index) => {
-          return (
-            <PostCard
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              excerpt={post.excerpt}
-              slug={post.slug}
-              key={index}
-            />
-          );
+          if (index > 5) {
+            return (
+              <PostCard
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                excerpt={post.excerpt}
+                slug={post.slug}
+                key={index}
+              />
+            );
+          }
         })}
       </section>
       <div className="flex justify-end">
