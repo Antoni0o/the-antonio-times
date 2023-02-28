@@ -9,14 +9,14 @@ export default function Navbar() {
   return (
     <div className="container flex flex-wrap items-center justify-between mx-auto">
       <Link href="/" className="flex items-center">
-        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-slate-400">
+        <span className="self-center text-xl font-bold whitespace-nowrap text-slate-700 dark:text-slate-200">
           TheAntonioTimes
         </span>
       </Link>
       <button
         data-collapse-toggle="navbar-solid-bg"
         type="button"
-        className="inline-flex items-center p-2 ml-3 text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
+        className="inline-flex items-center p-2 ml-3 text-sm text-slate-700 dark:text-slate-200 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
         aria-controls="navbar-solid-bg"
         aria-expanded="true"
         onClick={() => {
@@ -58,11 +58,11 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/materias"
+              href="/posts"
               className="block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent"
               aria-current="page"
             >
-              Matérias
+              Posts
             </Link>
           </li>
         </ul>

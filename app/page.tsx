@@ -14,10 +14,12 @@ export default async function Page() {
   return (
     <main className="p-3">
       <section className="md:flex flex-row justify-between items-center bg-slate-200 dark:bg-slate-700 rounded-xl mb-10">
-        <div className="p-4">
-          <div className="mb-2">
-            <h1 className="font-bold text-4xl sm:text-6xl mb-2">Bom dia!</h1>
-            <h2 className="text-lg sm:text-xl">
+        <div className="p-2">
+          <div className="mb-1">
+            <h1 className="font-bold text-xl md:text-4xl lg:text-6xl mb-2 text-slate-700 dark:text-slate-200">
+              Bom dia!
+            </h1>
+            <h2 className="text-lg md:text-xl lg:text-1xl text-slate-700 dark:text-slate-200">
               Me chamo <b>Antonio</b>, sou apaixonado por tecnologia. Desenvolvo
               e faço os posts para este blog!
               <br />
@@ -47,10 +49,10 @@ export default async function Page() {
         <img
           src="https://github.com/Antoni0o.png"
           alt="Foto de perfil do Github do Antonio"
-          className="rounded-b-lg md:rounded-r-lg md:rounded-l-none w-full md:w-1/4"
+          className="rounded-b-lg md:rounded-r-lg md:rounded-l-none w-full sm:w-1/3 lg:w-1/4"
         />
       </section>
-      <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-center">
+      <section className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 justify-center">
         {posts.map((post, index) => {
           if (index < 5) {
             return (
