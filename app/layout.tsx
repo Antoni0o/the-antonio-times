@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { useRouter } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import Navbar from "../components/Navbar";

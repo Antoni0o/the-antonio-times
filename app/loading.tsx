@@ -1,3 +1,9 @@
+import "../styles/loading.css";
+
 export default function Loading() {
-  return <h1>Loading</h1>;
+  return (
+    <section className="custom-container loading">
+      <div className="circle"></div>
+    </section>
+  );
 }

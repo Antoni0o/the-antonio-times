@@ -1,4 +1,5 @@
 import PostCard from "../components/PostCard";
+import Link from "next/link";
 import { getAllPosts } from "../lib/api";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
@@ -69,9 +70,12 @@ export default async function Page() {
         })}
       </section>
       <div className="flex justify-end">
-        <button className="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-400 py-2 px-4 my-2 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-200">
+        <Link
+          href="/posts"
+          className="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-400 py-2 px-4 my-2 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-200"
+        >
           Veja mais
-        </button>
+        </Link>
       </div>
     </main>
   );
