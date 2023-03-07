@@ -9,16 +9,31 @@ async function getPosts() {
   return posts;
 }
 
+function getCurrentWelcomeMessage() {
+  const currentHour = new Date().getHours();
+
+  if (currentHour > 6 && currentHour < 12) {
+    return "Bom dia!";
+  } else if (currentHour > 12 && currentHour < 18) {
+    return "Boa tarde!";
+  } else if (currentHour > 18 && currentHour < 23) {
+    return "Boa noite!";
+  } else {
+    return "Boa madrugada!";
+  }
+}
+
 export default async function Page() {
   const posts = await getPosts();
+  const message = getCurrentWelcomeMessage();
 
   return (
     <main className="p-3">
       <section className="md:flex flex-row justify-between items-center bg-slate-200 dark:bg-slate-700 rounded-xl mb-10">
         <div className="p-2">
           <div className="mb-1">
-            <h1 className="font-bold text-xl md:text-4xl lg:text-6xl mb-2 text-slate-700 dark:text-slate-200">
-              Bom dia!
+            <h1 className="font-bold text-4xl lg:text-6xl mb-2 text-slate-700 dark:text-slate-200">
+              {message}
             </h1>
             <h2 className="text-lg md:text-xl lg:text-1xl text-slate-700 dark:text-slate-200">
               Me chamo <b>Antonio</b>, sou apaixonado por tecnologia. Desenvolvo
@@ -55,7 +70,7 @@ export default async function Page() {
       </section>
       <section className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 justify-center">
         {posts.map((post, index) => {
-          if (index < 5) {
+          if (index < 4) {
             return (
               <PostCard
                 title={post.title}

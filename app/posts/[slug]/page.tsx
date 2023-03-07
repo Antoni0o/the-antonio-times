@@ -1,5 +1,6 @@
 import Head from "next/head";
 import markdownToHtml, { getPostBySlug } from "../../../lib/api";
+import "../../../public/styles/post.css";
 
 type PostPageParams = {
   params: {
@@ -31,7 +32,7 @@ export default async function Page({ params: { slug } }: PostPageParams) {
       <Head>
         <title>The Antonio Times - {data.post.title}</title>
       </Head>
-      <article className="text-slate-700 dark:text-slate-200">
+      <article className="md:flex md:flex-col md:mx-72 text-slate-700 dark:text-slate-200">
         <div>
           <div className="px-3 pt-2">
             <h1 className="text-4xl font-extrabold ">{data.post.title}</h1>
@@ -45,11 +46,11 @@ export default async function Page({ params: { slug } }: PostPageParams) {
             <img
               src={data.post.coverImage}
               alt={`Imagem que representa ${data.post.title}`}
-              className="w-full md:w-1/3 md:px-3 md:rounded-lg"
+              className="w-full md:w-96 md:px-3 rounded-3xl"
             />
           </div>
         </div>
-        <div className="p-3">
+        <div className="text-lg w-auto mt-4">
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
       </article>

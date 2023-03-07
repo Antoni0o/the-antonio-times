@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ReactNode } from "react";
 import Navbar from "../components/Navbar";
-import "../styles/globals.css";
+import "../public/styles/globals.css";
 
 interface ILayout {
   children: ReactNode;

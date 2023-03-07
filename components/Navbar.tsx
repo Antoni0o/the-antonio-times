@@ -2,7 +2,6 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState("hidden");
@@ -52,9 +51,9 @@ export default function Navbar() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           ></path>
         </svg>
       </button>
@@ -62,7 +61,7 @@ export default function Navbar() {
         className={`${isHidden} w-full md:block md:w-auto transition-opacity`}
         id="navbar-solid-bg"
       >
-        <ul className="flex flex-col mt-4 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-slate-800 md:dark:bg-transparent dark:border-slate-700">
+        <ul className="flex flex-col items-center m-0 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-slate-800 md:dark:bg-transparent dark:border-slate-700 list-none">
           <li>
             <Link
               href="/"
