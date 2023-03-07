@@ -50,7 +50,7 @@ export default async function Page({ params: { slug } }: PostPageParams) {
             />
           </div>
         </div>
-        <div className="text-lg w-auto mt-4 mx-10 md:mx-0">
+        <div className="text-lg w-auto mt-4 mx-10 lg:mx-0">
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
       </article>
