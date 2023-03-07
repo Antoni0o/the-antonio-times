@@ -32,7 +32,7 @@ export default async function Page({ params: { slug } }: PostPageParams) {
       <Head>
         <title>The Antonio Times - {data.post.title}</title>
       </Head>
-      <article className="md:flex md:flex-col md:mx-72 text-slate-700 dark:text-slate-200">
+      <article className="lg:flex lg:flex-col lg:mx-72 text-slate-700 dark:text-slate-200">
         <div>
           <div className="px-3 pt-2">
             <h1 className="text-4xl font-extrabold ">{data.post.title}</h1>
