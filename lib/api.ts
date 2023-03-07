@@ -6,6 +6,10 @@ import html from 'remark-html'
 
 const postsDirectory = join(process.cwd(), '_posts');
 
+export type Items = {
+    [key: string]: string
+}
+
 export function getPostSlugs() {
     return fs.readdirSync(postsDirectory);
 }
@@ -15,10 +19,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     const fullPath = join(postsDirectory, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf-8');
     const { data, content } = grayMatter(fileContents);
-
-    type Items = {
-        [key: string]: string
-    }
 
     const items: Items = {}
 

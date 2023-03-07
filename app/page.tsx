@@ -1,7 +1,7 @@
-import PostCard from "../components/PostCard";
-import Link from "next/link";
-import { getAllPosts } from "../lib/api";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import Link from "next/link";
+import PostCard from "../components/PostCard";
+import { getAllPosts } from "../lib/api";
 
 async function getPosts() {
   const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt"]);

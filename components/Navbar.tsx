@@ -1,10 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState("hidden");
+  const [theme, setTheme] = useState("");
+
+  useEffect(() => {
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+
+    localStorage.setItem("theme", theme);
+  }, []);
 
   return (
     <div className="container flex flex-wrap items-center justify-between mx-auto">

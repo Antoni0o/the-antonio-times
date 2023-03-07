@@ -13,9 +13,6 @@ export default async function Page() {
   return (
     <main className="p-3">
       <section className="mb-4">
-        <h1 className="font-bold text-xl md:text-4xl lg:text-6xl mb-2 text-slate-700 dark:text-slate-200">
-          Bom dia!
-        </h1>
         <h2 className="text-lg md:text-xl lg:text-1xl text-slate-700 dark:text-slate-200">
           Aqui você pode encontrar todos os meus posts!
         </h2>
