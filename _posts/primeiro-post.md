@@ -2,7 +2,7 @@
 title: "Primeiro Post; Quem é o Antonio?"
 excerpt: "Autor de provavelmente todos os posts deste blog, conheça um pouco sobre mim."
 coverImage: "/assets/primeiro-post/cover.jpg"
-date: "27 de fevereiro de 2023 às 10:30"
+date: "07 de março de 2023 às 14:00"
 author:
   name: "Antonio"
   picture: "https://github.com/Antoni0o.png"
@@ -10,17 +10,17 @@ author:
 
 Olá!
 
-Este é o primeiro post do meu blog. Como ainda não escrevi nenhum, não tenho experiência; mas como eu vou conseguir experiência se não tentar?
+Este é o primeiro post do meu blog. Como nunca escrevi nada do tipo, não tenho experiência. Mas como eu vou conseguir experiência se não tentar?
 
 _(Peço a compreensão dos leitores. Prometo que irei realizar algumas pesquisas e melhorar o jeito de escrever com o tempo)_
 
 ---
 
-Dessa vez, para o primeiro post, estarei falando um pouco sobre mim e sobre a ideia deste blog.
+Desta vez, para o primeiro post, estarei falando um pouco sobre mim e sobre a ideia deste blog.
 
-Como você provavelmente já viu na página inicial, me chamo Antonio! Tenho 17 anos e estudo programação desde os 14. Nos últimos dois anos, estudei um pouco de tudo – tudo mesmo, virei **bem** generalista –, desde NextJS para o Front-end (tecnologia utilizada para o desenvolvimento deste blog; vou falar mais sobre num próximo post) até Java com SpringBoot ou Quarkus para o Back-end.
+Como você provavelmente já viu na página inicial, me chamo Antonio, Tenho 17 anos e estudo programação desde os 14. Nos últimos dois anos, estudei um pouco de tudo – tudo mesmo, fui **bem** generalista –, desde NextJS para o Front-end (tecnologia utilizada para o desenvolvimento deste blog; vou falar mais sobre num próximo post) até Java com SpringBoot ou Quarkus para o Back-end. Obviamente não foram apenas estas tecnologias, mas elas são as principais atualmente.
 
-Obviamente não foram apenas estas tecnologias, mas elas são as principais atualmente, mas no geral eu já estudei – mesmo que só um pouquinho – todas nesta lista:
+No geral eu já estudei – mesmo que só um pouquinho – todas nesta lista:
 
 - JavaScript/TypeScript:
   - NestJS;
@@ -47,13 +47,13 @@ Obviamente não foram apenas estas tecnologias, mas elas são as principais atua
   - Banco de dados relacional (PostgreSQL, MySQL, Oracle...);
   - Banco de dados não-relacional em documentos (MongoDB, CosmosDB);
 
-Deu pra ver que mexi com MUITA coisa nos últimos dois anos. Mesmo com todas essas tecnologias na lista, eu tenho mais confiança e me especializei apenas em algumas – não arrisco dizer que SEI programar em Python, Ruby ou Go, por exemplo.
+_Deu pra ver que mexi algumas coisinhas nos últimos dois anos._
 
-Sou extremamente curioso então acabo testando uma coisinha ou outra. Sei que ainda tenho muito a aprender e que tenho muito potencial para o aprendizado de ainda mais tecnologias! Pretendo continuar criando mais experiência no que estou focando agora, e se eu conseguir uma oportunidade, quero aprender mais sobre Ruby e Cucumber para fazer testes de componente.
+Mesmo que eu já tenha estudado todas essas tecnologias na lista, eu tenho mais confiança e me especializei apenas em algumas – **não arrisco dizer que SEI** programar em Python, Ruby ou Go, por exemplo. Sou extremamente curioso então acabo testando uma coisa ou outra. Sei que ainda tenho muito a aprender e que tenho muito potencial para o aprendizado de ainda mais tecnologias! Pretendo continuar criando mais experiência no que estou focando agora e, se eu conseguir uma oportunidade, quero aprender mais sobre Ruby e Cucumber para fazer testes de componente.
 
-Não sei se você que está lendo chegou a se perguntar como estudei tudo isso nos últimos tempos e se pensou que eu estudei sozinho, mas vou responder mesmo assim: a grande maioria dessas tecnologias eu aprendi durante minha experiência de estágio na CI&T, empresa que foi muito importante para a evolução da minha carreira como programador. Antes do estágio, eu sabia apenas algumas tecnologias da stack JavaScript/TypeScript e lá pude aprender sobre todas essas outras tecnologias citadas acima; principalmente sobre Java, Cloud e Microsserviços. Infelizmente, meu contrato acabou no fim do ano passado e agora estou desempregado :/
+Não sei se você que está lendo chegou a se perguntar como estudei tudo isso nos últimos tempos, e se pensou que eu estudei sozinho; mas para responder (mesmo que você não queira uma resposta) a realidade é que a grande maioria dessas tecnologias eu aprendi durante minha experiência de estágio na CI&T, empresa que foi muito importante para a evolução da minha carreira como programador. Antes do estágio, eu sabia apenas algumas tecnologias da stack JavaScript/TypeScript e lá eu tive a oportunidade de aprender sobre todas essas outras tecnologias citadas acima (principalmente sobre Java, Cloud e Microsserviços). Infelizmente, meu contrato acabou no fim do ano passado e agora estou desempregado :/
 
-Junto do fim de contrato, me formei no ensino médio e técnico na Etec. Com todas essas mudanças, fiquei com bastante tempo livre para estudar e criar projetos pessoais; então aproveitei para desenvolver e começar a escrever neste blog. Por aqui, pretendo compartilhar algumas experiências e bastante informação sobre meus estudos em programação. Espero que algum post meu possa te ajudar!
+Junto do fim de contrato, me formei no ensino médio e técnico. Com todas essas mudanças, fiquei com bastante tempo livre para estudar e criar projetos pessoais; então aproveitei para desenvolver e começar a escrever neste blog. Por aqui, pretendo compartilhar algumas experiências e bastante informação sobre meus estudos em programação. Espero que algum post meu possa te ajudar!
 
 No próximo post estarei explicando com mais detalhes como este blog foi desenvolvido.
 
