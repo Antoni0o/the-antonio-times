@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import markdownToHtml, { getPostBySlug } from "../../../lib/api";
 import markdownStyles from "../../../public/styles/post.module.css";
 
+/* eslint-disable react/jsx-no-target-blank */
+
 type PostPageParams = {
   params: {
     slug: string;
