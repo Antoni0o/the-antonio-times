@@ -1,12 +1,20 @@
-import Head from "next/head";
+import type { Metadata } from "next";
 import markdownToHtml, { getPostBySlug } from "../../../lib/api";
-import "../../../public/styles/post.css";
+import markdownStyles from "../../../public/styles/post.module.css";
 
 type PostPageParams = {
   params: {
     slug: string;
   };
 };
+
+export async function generateMetadata({
+  params,
+}: PostPageParams): Promise<Metadata> {
+  const postData = await getData(params.slug);
+
+  return { title: "The Antonio Times - " + postData.post.title };
+}
 
 async function getData(slug: string) {
   const post = getPostBySlug(slug, [
@@ -29,9 +37,6 @@ export default async function Page({ params: { slug } }: PostPageParams) {
 
   return (
     <>
-      <Head>
-        <title>The Antonio Times - {data.post.title}</title>
-      </Head>
       <article className="lg:flex lg:flex-col lg:mx-72 text-slate-700 dark:text-slate-200">
         <div>
           <div className="px-3 pt-2">
@@ -51,7 +56,10 @@ export default async function Page({ params: { slug } }: PostPageParams) {
           </div>
         </div>
         <div className="text-lg w-auto mt-4 mx-10 lg:mx-0">
-          <div dangerouslySetInnerHTML={{ __html: data.content }} />
+          <div
+            className={markdownStyles["markdown"]}
+            dangerouslySetInnerHTML={{ __html: data.content }}
+          />
         </div>
       </article>
     </>

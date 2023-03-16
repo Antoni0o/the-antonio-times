@@ -12,11 +12,11 @@ async function getPosts() {
 function getCurrentWelcomeMessage() {
   const currentHour = new Date().getHours();
 
-  if (currentHour > 6 && currentHour < 12) {
+  if (currentHour > 6 && currentHour <= 12) {
     return "Bom dia!";
-  } else if (currentHour > 12 && currentHour < 18) {
+  } else if (currentHour > 12 && currentHour <= 18) {
     return "Boa tarde!";
-  } else if (currentHour > 18 && currentHour < 23) {
+  } else if (currentHour > 18 && currentHour <= 23) {
     return "Boa noite!";
   } else {
     return "Boa madrugada!";

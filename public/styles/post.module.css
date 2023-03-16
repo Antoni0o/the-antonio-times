@@ -1,0 +1,23 @@
+.markdown h3 {
+    @apply font-bold;
+}
+
+.markdown p {
+    @apply text-justify pb-2 leading-relaxed;
+}
+
+.markdown a {
+    @apply hover:underline font-bold text-sky-800;
+}
+
+.markdown ul {
+    @apply ml-6 mb-2 gap-2 list-disc list-outside;
+}
+
+.markdown hr {
+    @apply my-2 h-0.5 border-none bg-slate-500;
+}
+
+.markdown blockquote {
+    @apply ml-4 mb-4 p-2 border-l-4 border-slate-300
+}

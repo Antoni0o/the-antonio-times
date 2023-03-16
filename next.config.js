@@ -2,7 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true
+    appDir: true,
+    typedRoutes: true
+  },
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+
+    return config;
   }
 }
 
