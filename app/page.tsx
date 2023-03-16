@@ -46,6 +46,7 @@ export default async function Page() {
           <div className="md:flex gap-2">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/Antoni0o"
               className="flex gap-2 items-center text-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-400 py-2 px-4 my-2 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-200"
             >
@@ -54,6 +55,7 @@ export default async function Page() {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/antonio-dias788/"
               className="flex gap-2 items-center text-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-400 py-2 px-4 my-2 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-200"
             >

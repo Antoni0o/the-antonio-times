@@ -18,13 +18,13 @@ Hoje estarei explicando um pouco sobre a parte técnica e algumas curiosidades d
 
 Para começar, a tecnologia escolhida para o desenvolvimento foi o **NextJS** (como já foi comentado no post anterior), mas este projeto tem um diferencial da grande maioria das aplicações que utilizam ele. **O blog foi desenvolvido usando a versão 13 do Next, com o appDir** — a nova implementação da Vercel para o framework.
 
-> _Contextualizando para quem não estava ligado nas novidades: o appDir é um recurso experimental presente nas últimas atualizações do NextJS. É possível perceber mudanças relevantes no jeito de desenvolver com o framework. Para entender melhor, acesse: <a target="_blank" rel="noopener" href="https://nextjs.org/blog">https://nextjs.org/blog</a>_
+> _Contextualizando para quem não estava ligado nas novidades: o appDir é um recurso experimental presente nas últimas atualizações do NextJS. É possível perceber mudanças relevantes no jeito de desenvolver com o framework. Para entender melhor, acesse: <https://nextjs.org/blog>_
 
 ### Inspirações:
 
-Pesquisei por maneiras de fazer um blog em que eu tivesse bastante facilidade de escrever os posts e que não necessariamente precisasse escrevê-lo todo em HTML. A alternativa explicada pelo Mario Souto, do DevSoutinho <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=n5hnE1yPde0">neste vídeo</a> **foi a melhor que encontrei para o _meu caso_**. No vídeo ele mostra uma maneira de desenvolver um blog com **Markdown**, e isso me agradou muito.
+Pesquisei por maneiras de fazer um blog em que eu tivesse bastante facilidade de escrever os posts e que não necessariamente precisasse escrevê-lo todo em HTML. A alternativa explicada pelo Mario Souto, do DevSoutinho [neste vídeo](https://www.youtube.com/watch?v=n5hnE1yPde0) **foi a melhor que encontrei para o _meu caso_**. No vídeo ele mostra uma maneira de desenvolver um blog com **Markdown**, e isso me agradou muito.
 
-Para o suporte do vídeo, o Mario Souto recomendou o repositório de um exemplo de blog do mesmo estilo no <a target="_blank" rel="noopener" href="https://github.com/vercel/next.js/tree/canary/examples/blog-starter">Github da Vercel</a>; uma ótima referência para utilizar durante o desenvolvimento.
+Para o suporte do vídeo, o Mario Souto recomendou o repositório de um exemplo de blog do mesmo estilo no [Github da Vercel](https://github.com/vercel/next.js/tree/canary/examples/blog-starter); uma ótima referência para utilizar durante o desenvolvimento.
 
 ### Dificuldades:
 
