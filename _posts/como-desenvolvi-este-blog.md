@@ -28,7 +28,7 @@ Para o suporte do vídeo, o Mario Souto recomendou o repositório de um exemplo 
 
 ### Dificuldades:
 
-Durante o desenvolvimento, tive várias dificuldades. _Não foi fácil criar um blog inteiro apenas com referências de uma versão anterior do next;_ sem contar que usei o Tailwind, nunca tinha usado ele antes. As dificuldades resultaram em problemas que atrasaram um pouco o desenvolvimento, mas que também me renderam muito aprendizado.
+Durante o desenvolvimento, tive várias dificuldades. _Não foi fácil criar um blog inteiro apenas com referências de uma versão anterior do next;_ sem contar que usei o Tailwind, nunca tinha usado ele antes (foi uma mão na roda, mas no começo foi um pouco confuso; a documentação salvou demais). As dificuldades resultaram em problemas que atrasaram um pouco o desenvolvimento, mas que também me renderam muito aprendizado.
 
 ### Conclusão:
 
