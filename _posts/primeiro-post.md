@@ -18,9 +18,9 @@ _(Peço a compreensão dos leitores. Prometo que irei realizar algumas pesquisas
 
 Desta vez, para o primeiro post, estarei falando um pouco sobre mim e sobre a ideia deste blog.
 
-Como você provavelmente já viu na página inicial, me chamo Antonio; tenho 17 anos e estudo programação desde os 14. Nos últimos dois anos, estudei um pouco de tudo – tudo mesmo, fui **bem** generalista –, desde NextJS para o Front-end (tecnologia utilizada para o desenvolvimento deste blog; vou falar mais sobre num próximo post) até Java com SpringBoot ou Quarkus para o Back-end. Obviamente não foram apenas estas tecnologias, mas elas são as principais atualmente.
+Como você provavelmente já viu na página inicial, me chamo Antonio; tenho 17 anos e estudo programação desde os 14. Nos últimos dois anos, estudei um pouco de tudo — tudo mesmo, fui **bem** generalista —, desde NextJS para o Front-end (tecnologia utilizada para o desenvolvimento deste blog; vou falar mais sobre num próximo post) até Java com SpringBoot ou Quarkus para o Back-end. Obviamente não foram apenas estas tecnologias, mas elas são as principais atualmente.
 
-No geral eu já estudei – mesmo que só um pouquinho – todas as tecnologias nesta lista:
+No geral eu já estudei — mesmo que só um pouquinho — todas as tecnologias nesta lista:
 
 - JavaScript/TypeScript:
   - NestJS;
@@ -49,7 +49,7 @@ No geral eu já estudei – mesmo que só um pouquinho – todas as tecnologias 
 
 _Deu pra ver que mexi algumas coisinhas nos últimos dois anos._
 
-Mesmo que eu já tenha estudado todas essas tecnologias na lista, eu tenho mais confiança e me especializei apenas em algumas – **não arrisco dizer que SEI** programar em Python, Ruby ou Go, por exemplo. Sou extremamente curioso então acabo testando uma coisa ou outra. Sei que ainda tenho muito a aprender e que tenho muito potencial. Pretendo continuar criando mais experiência no que estou focando agora e, se eu conseguir uma oportunidade, quero aprender mais sobre Ruby e Cucumber para fazer testes de componente.
+Mesmo que eu já tenha estudado todas essas tecnologias na lista, eu tenho mais confiança e me especializei apenas em algumas — **não arrisco dizer que SEI** programar em Python, Ruby ou Go, por exemplo. Sou extremamente curioso então acabo testando uma coisa ou outra. Sei que ainda tenho muito a aprender e que tenho muito potencial. Pretendo continuar criando mais experiência no que estou focando agora e, se eu conseguir uma oportunidade, quero aprender mais sobre Ruby e Cucumber para fazer testes de componente.
 
 Não sei se você que está lendo chegou a se perguntar como estudei tudo isso nos últimos tempos, e se pensou que eu estudei sozinho; mas para responder (mesmo que você não queira uma resposta) a realidade é que a grande maioria dessas tecnologias eu aprendi durante minha experiência de estágio na CI&T; empresa que foi muito importante para a evolução da minha carreira como programador. Antes do estágio, eu sabia apenas algumas tecnologias da stack JavaScript/TypeScript e lá eu tive a oportunidade de aprender sobre todas essas outras tecnologias citadas acima (principalmente sobre Java, conceitos de Cloud e Microsserviços). Infelizmente, meu contrato acabou no fim do ano passado e agora estou desempregado :/
 

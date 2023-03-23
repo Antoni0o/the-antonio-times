@@ -32,9 +32,9 @@ Durante o desenvolvimento, tive várias dificuldades. **Não foi fácil criar um
 
 ### Conclusão:
 
-Mesmo com as dificuldades e algumas limitações que encontrei no caminho (como o problema na hora de enviar pra produção que, por algumas divergências no código, não era possível utilizar o LocalStorage), **consegui desenvolver um projeto que me orgulho bastante.** Não só porque foi difícil, mas porque eu fiz tudo de um jeito que me deixou muito satisfeito e também porque várias aprendi coisas novas!
+Mesmo com as dificuldades e algumas limitações que encontrei no caminho (como o problema na hora de enviar pra produção que, por algumas divergências no código, não era possível utilizar o LocalStorage), **consegui desenvolver um projeto que me orgulho bastante.** Não só porque foi difícil, mas porque eu fiz tudo de um jeito que me deixou muito satisfeito e também porque aprendi várias coisas novas!
 
-Este blog é algo que com certeza vai se tornar muito importante pra mim; não pretendo deixar desatualizado nunca, vou continuar implementando mais coisas e sempre postando novos artigos.
+Este blog é algo que com certeza vai se tornar muito importante pra mim; não pretendo deixar desatualizado nunca, vou continuar implementando mais coisas e sempre postar mais artigos.
 
 _**Um spoiler de implementação futura:** tema noturno (era para estar na versão inicial, porém o problema do LocalStorage ao subir pra produção impediu; acho que já descobri uma maneira de funcionar, logo estarei testando)._
 
