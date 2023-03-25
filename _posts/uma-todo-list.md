@@ -22,7 +22,7 @@ _(Observação: minha To-Do List não tem nada de muito inovador, só é um pouq
 
 Como já comentei antes: **não tem nada de muito diferente**, só que também não tá igual ao padrão de sempre.
 
-## A história por trás da To-Do List
+### A história por trás da To-Do List
 
 Comentei anteriormente que é muito comum entre os programadores front-end iniciantes desenvolverem uma To-Do list. Quando comecei a desenvolver este projeto, eu era iniciante; **só que eu não era apenas do front-end** (quis dizer que eu sou full-stack).
 
@@ -32,7 +32,7 @@ _Não encontrei apenas projetos de iniciantes, mas **a grande maioria era mais s
 
 Então eu quis começar **a minha própria To-Do List** e aproveitar pra treinar alguns conceitos extras, como o desenvolvimento de **APIs back-end** com ExpressJS e a **utilização delas no front-end**.
 
-## Então... Quais são as diferenças?
+### Então... Quais são as diferenças?
 
 Só de ter uma API por trás, **já era um baita diferencial**; mas este viria com algumas dificuldades.
 
@@ -48,22 +48,22 @@ Então além de ter uma tabela to-do's no banco de dados, precisamos ter uma tab
 
 Só esse ponto aí já deixa tanto o back-end como o front-end **muito mais interessante**.
 
-Começando por aí, **tive a ideia de criar as deadlines** — funcionalidade para o usuário conseguir colocar uma data limite de conclusão da tarefa e a aplicação avisar quando chegar no "overtime".
+> Começando por aí, **tive a ideia de criar as deadlines** — funcionalidade para o usuário conseguir colocar uma data limite de conclusão da tarefa e a aplicação avisar quando chegar no "overtime".
 
-![Tarefa no Status To-Do](/public/assets/uma-todo-list/task-to-do.png)
-![Tarefa no Status To-Do](/public/assets/uma-todo-list/task-overtime.png)
-![Tarefa no Status To-Do](/public/assets/uma-todo-list/task-done.png)
+![Tarefa no Status To-Do](/assets/uma-todo-list/task-to-do.png)
+![Tarefa no Status To-Do](/assets/uma-todo-list/task-overtime.png)
+![Tarefa no Status To-Do](/assets/uma-todo-list/task-done.png)
 _Conseguiu perceber a diferença entre os estados?_
 
-Além das funcionalidades, **fiz um trabalho um pouco diferente na UI**.  
-Me esforcei em criar uma interface simples e direta, **sem perder a beleza e sem seguir o padrão**.
+> Além das funcionalidades, **fiz um trabalho um pouco diferente na UI**.  
+> Me esforcei em criar uma interface simples e direta, **sem perder a beleza e sem seguir o padrão**.
 
-![Interface Home](/public/assets/uma-todo-list/interface-image.png)
+![Interface Home](/assets/uma-todo-list/interface-image.png)
 _Simples e direta._
 
-Vou bater na mesme tecla, mais uma vez: **não tem nada de muito diferente**. Mas tudo foi idealizado para ser um pouquinho menos do "de sempre".
-
 ---
+
+Vou bater na mesme tecla, mais uma vez: **não tem nada de muito diferente**. Mas tudo foi idealizado para ser um pouquinho menos do "de sempre".
 
 Por hoje é isso! Não vou me estender mais. O post já tá **bem** longo. O projeto ainda não está "completo", **vou tentar terminar algumas partes e disponibilizar o link no próximo post** (se você procurar no meu github, acha o repositório com os códigos e quem sabe o link... Aproveita e me segue lá :D ).
 

@@ -1,4 +1,6 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 import Link from "next/link";
 import PostCard from "../components/PostCard";
 import { getAllPosts } from "../lib/api";
@@ -10,7 +12,8 @@ async function getPosts() {
 }
 
 function getCurrentWelcomeMessage() {
-  const currentHour = new Date().getHours();
+  dayjs.extend(utc);
+  const currentHour = dayjs().local().hour();
 
   if (currentHour > 6 && currentHour <= 12) {
     return "Bom dia!";
