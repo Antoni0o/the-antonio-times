@@ -15,7 +15,21 @@ export async function generateMetadata({
 }: PostPageParams): Promise<Metadata> {
   const postData = await getData(params.slug);
 
-  return { title: "The Antonio Times - " + postData.post.title };
+  return { openGraph: {
+    title: postData.post.title,
+    authors: postData.post.author,
+    description: postData.post.excerpt,
+    siteName: 'The Antonio Times',
+    images: [
+      {
+        url: postData.post.coverImage,
+        width: 800,
+        height: 800,
+        alt: postData.post.title
+      }
+    ],
+    locale: 'pt-BR'
+  }};
 }
 
 async function getData(slug: string) {
