@@ -15,7 +15,11 @@ export async function generateMetadata({
 }: PostPageParams): Promise<Metadata> {
   const postData = await getData(params.slug);
 
-  return { openGraph: {
+  return { 
+    title: postData.post.title,
+    description: postData.post.excerpt,
+    colorScheme: 'dark light',
+    openGraph: {
     title: postData.post.title,
     authors: postData.post.author,
     description: postData.post.excerpt,
