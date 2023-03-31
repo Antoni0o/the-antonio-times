@@ -1,7 +1,7 @@
 ---
 title: "Minha experiência com o WSL"
 excerpt: "Testei o WSL por um certo tempo e vou contar um pouco do que achei."
-coverImage: "/assets/como-desenvolvi-este-blog/cover.png"
+coverImage: "/assets/experiencia-com-wsl/cover.png"
 date: "31 de março de 2023 às 10:30"
 author:
   name: "Antonio"
@@ -29,6 +29,6 @@ Porém, eu parei de utilizá-lo, e o motivo é simples: **performance**. Montar 
 Ainda assim, persisti no WSL por um tempo; até que nesta semana eu **voltei pro dual-boot**.
 
 Sinceramente, a experiência de usar um sistema Linux, **no meu caso**, acaba sendo bem mais confortável. Gosto bastante dos estilos e da facilidade de personalização! Não sou um heavy-user de Linux, nem perto disso — eu usu Ubuntu Gnome personalizado com o tema Dracula, totalmente Nutella...  
-Mas, **pra mim**, é muito melhor usar assim! **Todo este post é obviamente minha opinião**, não estou aqui pra definir que o WSL é horrível nem nada do tipo. Acho ele até muito bom, porém **pro meu contexto**, acabou não rodando muito bem **e achei** a experiência não tão legal. 
+Mas, **pra mim**, é muito melhor usar assim! **Todo este post é obviamente minha opinião**, não estou aqui pra definir que o WSL é horrível nem nada do tipo. Acho ele até muito bom, porém **pro meu contexto**, acabou não rodando muito bem **e achei** a experiência não tão legal.
 
 **Mesmo que, pra mim, não tenha sido tão legal; acho muito bom quem não testou dar uma oportunidade!** Pode ser que pra você a experiência seja muito melhor e mais agradável. É uma ideia muito bem bolada por parte da Microsoft, fez o Windows ficar ainda mais completo e mais forte no mercado. Acredito que muitos devs migraram — **e com razão** — para o Windows após a implementação do WSL.
