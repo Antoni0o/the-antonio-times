@@ -2,7 +2,7 @@
 title: "Minha experiência com o WSL"
 excerpt: "Testei o WSL por um certo tempo e vou contar um pouco do que achei."
 coverImage: "/assets/experiencia-com-wsl/cover.png"
-date: "31 de março de 2023 às 10:30"
+date: "31 de março de 2023 às 07:30"
 author:
   name: "Antonio"
   picture: "https://github.com/Antoni0o.png"
