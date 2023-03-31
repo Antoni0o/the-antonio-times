@@ -1,8 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import markdownToHtml, { getPostBySlug } from "../../../lib/api";
 import markdownStyles from "../../../public/styles/post.module.css";
-
-/* eslint-disable react/jsx-no-target-blank */
 
 type PostPageParams = {
   params: {
@@ -18,7 +17,6 @@ export async function generateMetadata({
   return { 
     title: postData.post.title,
     description: postData.post.excerpt,
-    colorScheme: 'dark light',
     openGraph: {
     title: postData.post.title,
     authors: postData.post.author,
