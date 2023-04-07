@@ -1,8 +1,8 @@
 ---
 title: "ChatGPT e a sua relevância no aprendizado"
 excerpt: "Fiz alguns testes e vou falar o que acho neste post"
-coverImage: ""
-date: "07 de abril de 2023 às 12:00"
+coverImage: "/assets/relevancia-do-chat-gpt/cover.png"
+date: "07 de abril de 2023 às 11:40"
 author:
   name: "Antonio"
   picture: "https://github.com/Antoni0o.png"
