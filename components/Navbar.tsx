@@ -1,25 +1,16 @@
-/* eslint-disable react/no-unescaped-entities */
-"use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie"
+import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState("hidden");
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState('');
+  const [cookie, setCookie] = useCookies(["theme"]);
 
   useEffect(() => {
-    if (
-      localStorage.getItem("theme") === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-
-    localStorage.setItem("theme", theme);
-  }, []);
+    setTheme(cookie.theme);
+  }, [cookie.theme, theme])
 
   return (
     <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -61,7 +52,7 @@ export default function Navbar() {
         className={`${isHidden} w-full md:block md:w-auto transition-opacity`}
         id="navbar-solid-bg"
       >
-        <ul className="flex flex-col items-center m-0 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-slate-800 md:dark:bg-transparent dark:border-slate-700 list-none">
+        <ul className="flex flex-col justify-center items-center m-0 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-slate-800 md:dark:bg-transparent dark:border-slate-700 list-none">
           <li>
             <Link
               href="/"
@@ -80,6 +71,20 @@ export default function Navbar() {
               Posts
             </Link>
           </li>
+          <button
+            onClick={() => {
+              if (cookie.theme == "light") {
+                setCookie("theme", "dark");
+              } else {
+                setCookie("theme", "light");
+              }
+              location.reload();
+            }}
+            className="inline-flex items-center p-2 ml-3 text-sm text-slate-500 rounded-lg hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
+          >
+            <span className="sr-only">Change Theme</span>
+            {theme == "dark" ? <BsSunFill /> : <BsFillMoonFill />}
+          </button>
         </ul>
       </div>
     </div>

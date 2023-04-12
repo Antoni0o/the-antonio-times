@@ -1,17 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ReactNode } from "react";
+"use client";
+import { ReactNode, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import "../public/styles/globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import { CookiesProvider, useCookies } from "react-cookie"
 
 interface ILayout {
   children: ReactNode;
 }
 
 export default function Layout({ children }: ILayout) {
+  const [cookie] = useCookies(["theme"]);
+  const [theme, setTheme] = useState('');
+
+  useEffect(() => {
+    setTheme(cookie.theme);
+  }, [cookie.theme, theme])
+
   return (
-    <>
-      <html>
+    <CookiesProvider>
+      <html className={theme}>
         <head>
           <title>The Antonio Times</title>
         </head>
@@ -23,8 +32,8 @@ export default function Layout({ children }: ILayout) {
             {children}
           </main>
         </body>
+        <Analytics />
       </html>
-      <Analytics />
-    </>
+    </CookiesProvider>
   );
 }
