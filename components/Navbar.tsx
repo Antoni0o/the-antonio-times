@@ -73,7 +73,7 @@ export default function Navbar() {
           </li>
           <button
             onClick={() => {
-              if (cookie.theme == "light") {
+              if (cookie.theme == "light" || cookie.theme == "") {
                 setCookie("theme", "dark");
               } else {
                 setCookie("theme", "light");
