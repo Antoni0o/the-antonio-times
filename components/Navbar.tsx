@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState("hidden");
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     if (
