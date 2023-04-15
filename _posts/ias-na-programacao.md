@@ -20,11 +20,11 @@ Estas duas ferramentas são alimentadas por IA e fornecem aos desenvolvedores um
 
 ---
 
-## Amazon CodeWhisperer
+### Amazon CodeWhisperer
 
 Uma das maiores vantagens do Amazon CodeWhisperer é sua **integração com a AWS** — já que foi desenvolvida por eles —, o que facilita o uso para desenvolvedores que trabalham em projetos hospedados na plataforma. O CodeWhisperer também fornece documentação abrangente e tutoriais que tornam fácil para os desenvolvedores começarem a usar a ferramenta. E o mais importante: **é gratuito**.
 
-## Github Copilot
+### Github Copilot
 
 O Copilot tem excelente **integração com o Github** — pois foi criado por eles, com a parceria da OpenAI —, o que torna fácil para os desenvolvedores usarem a ferramenta com seus fluxos de trabalho existentes no Github; **porém, é pago**.
 
