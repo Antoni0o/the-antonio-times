@@ -2,7 +2,7 @@
 title: "IAs na programação"
 excerpt: "No hype das IAs, vou falar mais uma vez sobre"
 coverImage: "/assets/ias-na-programacao/cover.png"
-date: "07 de abril de 2023 às 11:40"
+date: "15 de abril de 2023 às 13:00"
 author:
   name: "Antonio"
   picture: "https://github.com/Antoni0o.png"
