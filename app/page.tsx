@@ -1,5 +1,4 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import dayjs from "dayjs";
 import Link from "next/link";
 import PostCard from "../components/PostCard";
 import { getAllPosts } from "../lib/api";
@@ -11,7 +10,7 @@ async function getPosts() {
 }
 
 function getCurrentWelcomeMessage() {
-  const currentHour = dayjs().hour();
+  const currentHour = new Date().getHours();
   console.log("Current Hour: ", currentHour);
 
   if (currentHour >= 6 && currentHour <= 12) {
