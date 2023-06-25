@@ -9,7 +9,7 @@ async function getPosts() {
   return posts;
 }
 
-function getCurrentWelcomeMessage() {
+async function getCurrentWelcomeMessage() {
   const currentHour = new Date().getHours();
   console.log("Current Hour: ", currentHour);
 
@@ -26,7 +26,7 @@ function getCurrentWelcomeMessage() {
 
 export default async function Page() {
   const posts = await getPosts();
-  const message = getCurrentWelcomeMessage();
+  const message = await getCurrentWelcomeMessage();
 
   return (
     <main className="p-3">
