@@ -10,23 +10,24 @@ async function getPosts() {
 }
 
 async function getCurrentWelcomeMessage() {
-  const currentHour = new Date().getHours();
-  console.log("Current Hour: ", currentHour);
 
-  if (currentHour >= 6 && currentHour <= 12) {
-    return "Bom dia!";
-  } else if (currentHour >= 12 && currentHour <= 18) {
-    return "Boa tarde!";
-  } else if (currentHour >= 18 && currentHour <= 23) {
-    return "Boa noite!";
-  } else {
-    return "Boa madrugada!";
-  }
 }
 
 export default async function Page() {
   const posts = await getPosts();
-  const message = await getCurrentWelcomeMessage();
+  const currentHour = new Date().getHours();
+  console.log("current hour: ", currentHour);
+  let message;
+
+  if (currentHour >= 6 && currentHour <= 12) {
+    message = "Bom dia!";
+  } else if (currentHour >= 12 && currentHour <= 18) {
+    message = "Boa tarde!";
+  } else if (currentHour >= 18 && currentHour <= 23) {
+    message = "Boa noite!";
+  } else {
+    message = "Boa madrugada!";
+  }
 
   return (
     <main className="p-3">
