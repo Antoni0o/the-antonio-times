@@ -1,5 +1,6 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
+import dayjs from "dayjs";
 import PostCard from "../components/PostCard";
 import { getAllPosts } from "../lib/api";
 
@@ -15,7 +16,7 @@ async function getCurrentWelcomeMessage() {
 
 export default async function Page() {
   const posts = await getPosts();
-  const currentHour = Number(new Date().getHours().toLocaleString());
+  const currentHour = dayjs().hour();
   console.log("current hour: ", currentHour);
   console.log("date: ", new Date().getHours().toLocaleString());
   let message;
