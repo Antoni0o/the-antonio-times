@@ -17,6 +17,7 @@ export default async function Page() {
   const posts = await getPosts();
   const currentHour = new Date().getHours();
   console.log("current hour: ", currentHour);
+  console.log("date: ", new Date());
   let message;
 
   if (currentHour >= 6 && currentHour <= 12) {
@@ -28,6 +29,7 @@ export default async function Page() {
   } else {
     message = "Boa madrugada!";
   }
+
 
   return (
     <main className="p-3">
