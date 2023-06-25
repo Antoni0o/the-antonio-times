@@ -12,7 +12,7 @@ async function getPosts() {
 
 function getCurrentWelcomeMessage() {
   const currentHour = dayjs().hour();
-  console.log(currentHour);
+  console.log("Current Hour: ", currentHour);
 
   if (currentHour >= 6 && currentHour <= 12) {
     return "Bom dia!";
