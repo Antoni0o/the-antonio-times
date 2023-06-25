@@ -15,9 +15,9 @@ async function getCurrentWelcomeMessage() {
 
 export default async function Page() {
   const posts = await getPosts();
-  const currentHour = new Date().getHours();
+  const currentHour = new Date().getUTCHours();
   console.log("current hour: ", currentHour);
-  console.log("date: ", new Date());
+  console.log("date: ", new Date().getUTCHours);
   let message;
 
   if (currentHour >= 6 && currentHour <= 12) {
