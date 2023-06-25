@@ -1,6 +1,7 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 import PostCard from "../components/PostCard";
 import { getAllPosts } from "../lib/api";
 
@@ -15,8 +16,9 @@ async function getCurrentWelcomeMessage() {
 }
 
 export default async function Page() {
+  dayjs.extend(utc);
   const posts = await getPosts();
-  const currentHour = dayjs().hour();
+  const currentHour = dayjs().utc().local().hour();
   console.log("current hour: ", currentHour);
   console.log("date: ", new Date().getHours().toLocaleString());
   let message;
