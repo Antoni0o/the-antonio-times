@@ -19,6 +19,7 @@ export default async function Page() {
   dayjs.extend(utc);
   const posts = await getPosts();
   const currentHour = dayjs().subtract(3).hour();
+  console.log("currentHour", currentHour);
   let message;
 
   if (currentHour >= 6 && currentHour <= 12) {
