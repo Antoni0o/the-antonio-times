@@ -1,9 +1,8 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
 import PostCard from "../components/PostCard";
 import { getAllPosts } from "../lib/api";
+import DayMessage from "../components/DayMessage";
 
 async function getPosts() {
   const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt"]);
@@ -11,34 +10,15 @@ async function getPosts() {
   return posts;
 }
 
-async function getCurrentWelcomeMessage() {
-
-}
-
 export default async function Page() {
-  dayjs.extend(utc);
   const posts = await getPosts();
-  const currentDate = new Date();
-  const currentHour = currentDate.toLocaleTimeString();
-  console.log("currentHour", currentHour);
-  let message = 'Bom dia';
-
-  // if (currentHour >= 6 && currentHour <= 12) {
-  //   message = "Bom dia!";
-  // } else if (currentHour >= 12 && currentHour <= 18) {
-  //   message = "Boa tarde!";
-  // } else if (currentHour >= 18 && currentHour <= 6) {
-  //   message = "Boa noite!";
-  // }
 
   return (
     <main className="p-3">
       <section className="md:flex flex-row justify-between items-center bg-slate-200 dark:bg-slate-700 rounded-xl mb-10">
         <div className="p-2">
           <div className="mb-1">
-            <h1 className="font-bold text-4xl lg:text-6xl mb-2 text-slate-700 dark:text-slate-200">
-              {message}
-            </h1>
+            <DayMessage />
             <h2 className="text-lg md:text-xl lg:text-1xl text-slate-700 dark:text-slate-200">
               Me chamo <b>Antonio</b>, sou apaixonado por tecnologia. Desenvolvo
               e faço os posts para este blog!
