@@ -18,17 +18,18 @@ async function getCurrentWelcomeMessage() {
 export default async function Page() {
   dayjs.extend(utc);
   const posts = await getPosts();
-  const currentHour = dayjs().subtract(3).hour();
+  const currentDate = new Date();
+  const currentHour = currentDate.toLocaleTimeString();
   console.log("currentHour", currentHour);
-  let message;
+  let message = 'Bom dia';
 
-  if (currentHour >= 6 && currentHour <= 12) {
-    message = "Bom dia!";
-  } else if (currentHour >= 12 && currentHour <= 18) {
-    message = "Boa tarde!";
-  } else if (currentHour >= 18) {
-    message = "Boa noite!";
-  }
+  // if (currentHour >= 6 && currentHour <= 12) {
+  //   message = "Bom dia!";
+  // } else if (currentHour >= 12 && currentHour <= 18) {
+  //   message = "Boa tarde!";
+  // } else if (currentHour >= 18 && currentHour <= 6) {
+  //   message = "Boa noite!";
+  // }
 
   return (
     <main className="p-3">
