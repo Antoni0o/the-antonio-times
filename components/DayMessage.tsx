@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 
 export default function DayMessage() {
   const [message, setMessage] = useState("Bom dia!");
-  const currentDate = new Date();
-  const currentHour = currentDate.getHours();
-  console.log("currentHour", currentHour);
 
   useEffect(() => {
+    const currentDate = new Date();
+    const currentHour = currentDate.getHours();
+    console.log("currentHour", currentHour);
+
     if (currentHour >= 6 && currentHour <= 12) {
       setMessage("Bom dia!");
     } else if (currentHour >= 12 && currentHour <= 18) {
